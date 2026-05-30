@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-bg-binder: var(--nb-binder-bg);
+  --color-border-binder: var(--nb-binder-border);
+  --color-border-accent: var(--nb-paper-border);
+  --color-bg-tab-inactive: var(--nb-tab-inactive-bg);
+  --color-border-tab-inactive: var(--nb-tab-border);
+  --color-on-surface-variant: var(--nb-ink-muted);
+  --color-primary: var(--nb-primary);
+
+  --spacing-18: 4.5rem;
+
+  --font-sans: 'Outfit', 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+  --font-serif: 'IBM Plex Serif', Georgia, serif;
+}
+
+:root {
+  /* ── Desk tokens (used only outside the notebook) ── */
+  --desk-bg:              #eae7de;   /* calm, neutral desk background */
+  --desk-ink:             #1c2526;   /* desk text color */
+  --desk-muted:           #6f6a60;   /* desk secondary text */
+  --desk-rule:            rgba(40, 30, 30, 0.12); /* rule/separator */
+
+  /* ── Defaults (Blossom) ── */
+  --nb-primary: #E3B1B8;
+  --nb-canvas: #fffbfb;
+  --nb-paper-left: #fffbfb;
+  --nb-paper-right: #fffdfc;
+  --nb-surface-1: #fcf1f2;
+  --nb-surface-2: #f4e2d9;
+  --nb-hairline: #ebd6d7;
+  --nb-hairline-strong: #d5c2c4;
+  --nb-ink: #1A2E26;
+  --nb-ink-muted: rgba(26, 46, 38, 0.8);
+  --nb-ink-subtle: rgba(26, 46, 38, 0.5);
+  --nb-binder-bg: #ebe0e1;
+  --nb-binder-border: #d5c2c4;
+  --nb-tab-inactive-bg: #ebdcd2;
+  --nb-tab-border: #dfced0;
+  --nb-paper-border: #ebd6d7;
+}
+
+.theme-blossom {
+  --nb-primary: #E3B1B8;
+  --nb-canvas: #fffbfb;
+  --nb-paper-left: #fffbfb;
+  --nb-paper-right: #fffdfc;
+  --nb-surface-1: #fcf1f2;
+  --nb-surface-2: #f4e2d9;
+  --nb-hairline: #ebd6d7;
+  --nb-hairline-strong: #d5c2c4;
+  --nb-ink: #1A2E26;
+  --nb-ink-muted: rgba(26, 46, 38, 0.8);
+  --nb-ink-subtle: rgba(26, 46, 38, 0.5);
+  --nb-binder-bg: #ebe0e1;
+  --nb-binder-border: #d5c2c4;
+  --nb-tab-inactive-bg: #ebdcd2;
+  --nb-tab-border: #dfced0;
+  --nb-paper-border: #ebd6d7;
+}
+
+.theme-cobalt {
+  --nb-primary: #4A72B8;
+  --nb-canvas: #f7f9fd;
+  --nb-paper-left: #f7f9fd;
+  --nb-paper-right: #fafdff;
+  --nb-surface-1: #edf0f9;
+  --nb-surface-2: #e2e8f5;
+  --nb-hairline: #b8c8e8;
+  --nb-hairline-strong: #9ab4e0;
+  --nb-ink: #12233F;
+  --nb-ink-muted: rgba(18, 35, 63, 0.8);
+  --nb-ink-subtle: rgba(18, 35, 63, 0.5);
+  --nb-binder-bg: #c8d8f0;
+  --nb-binder-border: #a8c0e0;
+  --nb-tab-inactive-bg: #e0e8f5;
+  --nb-tab-border: #b8ccec;
+  --nb-paper-border: #b8c8e8;
+}
+
+.theme-sage {
+  --nb-primary: #7FAF8A;
+  --nb-canvas: #f7fdf9;
+  --nb-paper-left: #f7fdf9;
+  --nb-paper-right: #fafffb;
+  --nb-surface-1: #edf6f0;
+  --nb-surface-2: #e2ede5;
+  --nb-hairline: #c0d8c8;
+  --nb-hairline-strong: #9cbca7;
+  --nb-ink: #162318;
+  --nb-ink-muted: rgba(22, 35, 24, 0.8);
+  --nb-ink-subtle: rgba(22, 35, 24, 0.5);
+  --nb-binder-bg: #d8eddd;
+  --nb-binder-border: #b4cebb;
+  --nb-tab-inactive-bg: #e4f2e8;
+  --nb-tab-border: #c4dacc;
+  --nb-paper-border: #bcd8c4;
+}
+
+.theme-neutral {
+  --nb-primary: #7c7267;
+  --nb-canvas: #fcfcfb;
+  --nb-paper-left: #fcfcfb;
+  --nb-paper-right: #fdfdfc;
+  --nb-surface-1: #f5f4f2;
+  --nb-surface-2: #edebe7;
+  --nb-hairline: #e2dfda;
+  --nb-hairline-strong: #ccc7c0;
+  --nb-ink: #2b2824;
+  --nb-ink-muted: rgba(43, 40, 36, 0.8);
+  --nb-ink-subtle: rgba(43, 40, 36, 0.5);
+  --nb-binder-bg: #dedbd3;
+  --nb-binder-border: #ccc7bd;
+  --nb-tab-inactive-bg: #e5e2db;
+  --nb-tab-border: #d3cfc6;
+  --nb-paper-border: #e2dfda;
+}
+
+@layer base {
+  body {
+    background-color: var(--desk-bg);
+    color: var(--desk-ink);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Vertical Text for Book Tabs */
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* Custom shadow overlays and archival effects */
+.page-paper-shadow {
+  box-shadow: inset 0 0 40px rgba(40, 25, 25, 0.02);
+}
+
+/* Scrollbar styling for notebook lists */
+.notebook-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.notebook-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.notebook-scroll::-webkit-scrollbar-thumb {
+  background: var(--nb-hairline-strong);
+  border-radius: 3px;
+}
+.notebook-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--nb-primary);
+}
