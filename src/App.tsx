@@ -174,7 +174,7 @@ export default function App() {
                 <img 
                   src="/smc-ionic-greek-villa.png" 
                   alt="School Model Canvas Greek Villa Metaphor" 
-                  className="w-full max-h-[220px] object-cover rounded-lg"
+                  className="w-full h-auto rounded-lg"
                 />
               </div>
 
